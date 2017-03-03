@@ -14,7 +14,7 @@ else if(apellido == null || apellido.length == 0 || !(/^[a-zA-Z]*$/.test(nombre)
   alert("Necesitas ingresar tu apellido");
   return false;
 }
-else if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\. \w{2,3,4})+$/.test(email)) {
+else if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\. \w{2,3,4})+$/.test(email))) {
   alert("Ingrese una cuenta de email valida");
   return false;
 }
